@@ -38,9 +38,6 @@ tl.from('.navbar',{
 }).from('.hero .heading',{
     duration:0.5,
     y:"-100%"
-},'-=1').from('.hero p',{
-    x:"-500%",
-    duration:1.6
 },'-=1').from('.hero a',{
     opacity:0,
     y:"100%"
@@ -82,4 +79,12 @@ scroll_events.from('.events .heading',{
     duration:0.2,
     stagger:0.3
 },'-=1')
+const app = document.getElementById('app');
 
+let typewriter = new Typewriter(app, {
+  strings:["An Event Management Company"],
+  autoStart: true,
+  delay:60,
+  loop:true
+});
+typewriter.start();
