@@ -79,6 +79,7 @@ scroll_events.from('.events .heading',{
     duration:0.2,
     stagger:0.3
 },'-=1')
+
 const app = document.getElementById('app');
 
 let typewriter = new Typewriter(app, {
@@ -88,3 +89,4 @@ let typewriter = new Typewriter(app, {
   loop:true
 });
 typewriter.start();
+
