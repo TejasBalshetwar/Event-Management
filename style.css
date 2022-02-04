@@ -3,6 +3,26 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* changing scrollbar */
+::-webkit-scrollbar{
+    width: 14px;
+}
+::-webkit-scrollbar-track{
+    background: #414040;
+    /* box-shadow: 0 0 10px 0 #000000; */
+}
+::-webkit-scrollbar-thumb{
+    background: #727171;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #303030;
+}
+/* change text selection color */
+::selection{
+    /* color: white; */
+    background: rgba(0, 0, 0, 0.637);
+}
 :root {
     /* Fonts */
     --ff-heading: "Righteous", cursive;
@@ -284,7 +304,7 @@ a:hover{
         top: 80px;
         right: 0;
         background-color: #504f4f;
-        width: 50%;
+        width: 30%;
         height: 90vh;
         display: flex;
         justify-content: center;
